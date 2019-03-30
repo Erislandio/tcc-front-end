@@ -38,7 +38,7 @@ class Account extends Component {
                         <div className="resultados-wrapper">
 
                             {
-                                results == false ? (
+                                results.length == 0 ? (
                                     <div className="results">
                                         <h1 className="results-title">Resultados</h1>
                                         <div className="not-results">
