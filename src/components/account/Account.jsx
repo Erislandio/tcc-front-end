@@ -20,7 +20,7 @@ class Account extends Component {
         const { user } = this.props.user.data
         console.log(this)
         return (
-            this.state.loader && results == false ? (
+            this.state.loader && results.length == 0 ? (
                 <Loader />
             ) : (
                     <div className="account" id="account">
