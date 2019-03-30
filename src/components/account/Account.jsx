@@ -41,7 +41,7 @@ class Account extends Component {
               <div className="not-results">
                 <h2 className="title-not">
                   Não foram encontrados Resultados.
-                  <Link to="/camera" className="link-camera">
+                  <Link to="teste/camera" className="link-camera">
                     Clique aqui para realizar o teste com a camera
                   </Link>
                 </h2>

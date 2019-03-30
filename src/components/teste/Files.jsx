@@ -32,16 +32,20 @@ class Files extends Component {
           : ""
       },
       () => {
-        let rect = document.querySelectorAll(".rect");
-        let i = 0;
-        if (rect.length) {
-          for (i = 0; i < rect.length; i++) {
-            rect[i].remove();
-          }
-        }
+        this.handleRemoveRect();
       }
     );
   }
+
+  handleRemoveRect = () => {
+    let rect = document.querySelectorAll(".rect");
+    let i = 0;
+    if (rect.length) {
+      for (i = 0; i < rect.length; i++) {
+        rect[i].remove();
+      }
+    }
+  };
 
   handleCheckColor = () => {
     const _this = this;
@@ -116,10 +120,12 @@ class Files extends Component {
           this.setState({ error: "Resutados foram salvos com sucesso." });
           setTimeout(() => {
             this.setState({ error: "", result: false, resultado: "" });
+            this.handleRemoveRect();
           }, 4000);
         } else {
           this.setState({ error: "Não foi possível salvar os dados" });
           setTimeout(() => {
+            this.handleRemoveRect();
             this.setState({ error: "", result: false, resultado: "" });
           }, 4000);
         }
