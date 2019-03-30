@@ -15,10 +15,15 @@ class Account extends Component {
 
     }
 
+    componentDidMount() {
+        this.setState({loader: false})
+    }
+
     render() {
         const results = this.props.results["results"]
         const { user } = this.props.user.data
         console.log(this)
+        console.log(results)
         return (
             this.state.loader && results.length == 0 ? (
                 <Loader />
