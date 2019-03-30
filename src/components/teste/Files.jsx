@@ -43,16 +43,6 @@ class Files extends Component {
     );
   }
 
-  componentDidUpdate() {
-    let rect = document.querySelectorAll(".rect");
-    let i = 0;
-    if (rect.length) {
-      for (i = 0; i < rect.length; i++) {
-        rect[i].remove();
-      }
-    }
-  }
-
   handleCheckColor = () => {
     const _this = this;
 
