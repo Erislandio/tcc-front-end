@@ -9,7 +9,7 @@ import axios from 'axios'
 import { BrowserRouter } from "react-router-dom";
 import Loader from './components/helpers/Loader';
 
-const base_url = "http://localhost:3000/results/result"
+const base_url = "https://backend-tcc.herokuapp.com/results/result"
 
 
 class App extends Component {

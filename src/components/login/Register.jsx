@@ -5,7 +5,7 @@ import Popup from '../helpers/Popup';
 import Loader from '../helpers/Loader';
 
 
-const base_url = "http://localhost:3000"
+const base_url = "https://backend-tcc.herokuapp.com"
 
 class Register extends Component {
 
