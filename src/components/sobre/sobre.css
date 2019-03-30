@@ -1,0 +1,60 @@
+@media (max-width: 767px) {
+    .banner img {
+        max-width: 100%;
+        width: 100%;
+    }
+    aside.profile-card {
+        width: 85% !important;
+        margin: 20px auto;
+        padding: 35px !important;
+        height: auto !important;      
+    }
+    img.hoverZoomLink {
+        width: 100px;
+    }
+
+    ul.profile-social-links{
+      font-size: 20px !important;
+      margin-top: 25px;
+    }
+
+    .profile-bio {
+      margin-top: 20px;
+      font-size: 13px;
+  }
+
+    .profile-card header h1 {
+      color: #7386D5;
+      font-size: 21px;
+      margin: 20px 0px;
+      text-transform: capitalize;
+      font-weight: bold;
+      height: 30px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+  }
+}
+
+.contatos ul {
+    flex-wrap: wrap;
+}
+
+.banner {
+    margin: 20px 0px;
+}
+
+.sobre a {
+    margin: 25px 0px;
+    padding: 20px 0px;
+    display: block;
+}
+
+.sobre h2 {
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.sobre p {
+    margin: 15px 0px;
+}

@@ -1,0 +1,103 @@
+.spot-user {
+    padding: 35px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 2px 14px rgba(0, 0, 0, 0.2);
+    border: 1px solid #dedede;
+}
+
+.name-user {
+    padding: 10px 0px;
+}
+
+.spot-user.user-results {
+    margin-top: 75px;
+}
+
+.results {
+    padding: 35px;
+    margin-top: 25px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 3px 2px 14px rgba(0, 0, 0, 0.2);
+    border: 1px solid #dedede;
+}
+
+.not-results {
+    padding: 20px 0px;
+    text-align: center;
+}
+
+a.link-camera {
+    display: block;
+    margin-top: 10px;
+}
+
+div#account h1 {
+    font-size: 28px;
+}
+
+.results-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.result-card {
+    width: 100%;
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 3px 2px 14px rgba(0, 0, 0, 0.2);
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.result-text span {
+    padding-bottom: 5px;
+}
+
+.result-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: left;
+}
+
+.result-card b {
+    font-size: 16px;
+    width: 100%;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+b.result-b {
+    color: #1abc9c;
+}
+
+b.amb-b {
+    font-weight: normal;
+}
+
+b.date-b {
+    color: #3498db;
+}
+
+p.contagem-result {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-size: 12px;
+}
+
+p.contagem-result b {
+    color: #3498db;
+    font-weight: bold;
+}
