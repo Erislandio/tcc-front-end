@@ -56,9 +56,6 @@ class Account extends Component {
                 console.log(result);
                 return (
                   <div className="result-card" key={i}>
-                    <div className="img-results">
-                      <img src={result.imagem} alt="resultado imagem" />
-                    </div>
                     <p className="contagem-result">
                       <b className="date-b">Data do teste:</b>
                       {new Date(result.data_resultado).toLocaleString()}
