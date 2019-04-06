@@ -163,12 +163,6 @@ class Camera extends Component {
         <button onClick={() => this.sendResult()} id="capture">
           Salvar resultado
         </button>
-
-        <div className="imagem-results">
-          {this.state.result && this.state.resultado
-            ? this.state.resultado
-            : "Não foram encontrados tons amarelados na imagem."}
-        </div>
         <Popup
           text={this.state.error}
           className={this.state.error ? " show " : " hidden"}
