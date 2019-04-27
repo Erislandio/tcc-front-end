@@ -141,7 +141,7 @@ class Camera extends Component {
         <div className="capture-image">
           <Webcam
             audio={false}
-            height={600}
+            height={400}
             ref={this.setRef}
             screenshotFormat="image/png"
             width={600}

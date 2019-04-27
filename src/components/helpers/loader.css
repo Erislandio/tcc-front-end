@@ -5,176 +5,324 @@
 *,
 *:after,
 *:before,
-html
-	{box-sizing:border-box}
+html {
+    box-sizing: border-box
+}
 
-body{
-	margin:0;
-	padding:0;
-	}
+body {
+    margin: 0;
+    padding: 0;
+}
 
-.container-loader{
-	width:200px;
-	height:200px;
-	top:50%;
-	left:50%;
-	display:block;
-	position:absolute;
-	transform:translate(-50%,-50%)
-	}
+.container-loader {
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    display: block;
+    position: absolute;
+    transform: translate(-50%, -50%)
+}
 
-.container-loader div{
-	width:100px;
-	height:100px;
-	top:50px;
-	left:50px;
-	display:block;
-	position:absolute
-	}
+@media (max-width: 767px) {
+    .container-loader {
+        top: 0;
+        position: relative;
+        transform: translate(-50%)
+    }
+}
 
-.top-left
-	{animation:tl 7.5s ease infinite}
+.container-loader div {
+    width: 100px;
+    height: 100px;
+    top: 50px;
+    left: 50px;
+    display: block;
+    position: absolute
+}
 
-.top-right
-	{animation:tr 7.5s ease infinite}
+.top-left {
+    animation: tl 7.5s ease infinite
+}
 
-.bottom-left
-	{animation:bl 7.5s ease infinite}
+.top-right {
+    animation: tr 7.5s ease infinite
+}
 
-.bottom-right
-	{animation:br 7.5s ease infinite}
+.bottom-left {
+    animation: bl 7.5s ease infinite
+}
+
+.bottom-right {
+    animation: br 7.5s ease infinite
+}
 
 .container-loader div:before,
-.container-loader div:after
-	{content:"";display:block;position:absolute}
+.container-loader div:after {
+    content: "";
+    display: block;
+    position: absolute
+}
 
-.container-loader div:before
-	{width:50px;height:50px}
+.container-loader div:before {
+    width: 50px;
+    height: 50px
+}
 
-.top-left:before{
-	background:#fbbc05;
-	top:0;
-	left:0;
-	border-radius:100% 0 0 0
-	}
+.top-left:before {
+    background: #fbbc05;
+    top: 0;
+    left: 0;
+    border-radius: 100% 0 0 0
+}
 
-.top-right:before{
-	background:#ea4335;
-	top:0;
-	right:0;
-	border-radius:0 100% 0 0
-	}
+.top-right:before {
+    background: #ea4335;
+    top: 0;
+    right: 0;
+    border-radius: 0 100% 0 0
+}
 
-.bottom-left:before{
-	background:#34a853;
-	bottom:0;
-	left:0;
-	border-radius:0 0 0 100%
-	}
+.bottom-left:before {
+    background: #34a853;
+    bottom: 0;
+    left: 0;
+    border-radius: 0 0 0 100%
+}
 
-.bottom-right:before{
-	background:#4285f4;
-	bottom:0;
-	right:0;
-	border-radius:0 0 100% 0
-	}
+.bottom-right:before {
+    background: #4285f4;
+    bottom: 0;
+    right: 0;
+    border-radius: 0 0 100% 0
+}
 
-.container-loader div:after{
-	width:25px;
-	height:25px;
-	z-index:1
-	}
+.container-loader div:after {
+    width: 25px;
+    height: 25px;
+    z-index: 1
+}
 
-.top-left:after
-	{top:25px;left:25px;border-radius:100% 0 0 0}
+.top-left:after {
+    top: 25px;
+    left: 25px;
+    border-radius: 100% 0 0 0
+}
 
-.top-right:after
-	{top:25px;right:25px;border-radius:0 100% 0 0}
+.top-right:after {
+    top: 25px;
+    right: 25px;
+    border-radius: 0 100% 0 0
+}
 
-.bottom-left:after
-	{bottom:25px;left:25px;border-radius:0 0 0 100%}
+.bottom-left:after {
+    bottom: 25px;
+    left: 25px;
+    border-radius: 0 0 0 100%
+}
 
-.bottom-right:after
-	{bottom:25px;right:25px;border-radius:0 0 100% 0}
+.bottom-right:after {
+    bottom: 25px;
+    right: 25px;
+    border-radius: 0 0 100% 0
+}
 
-@keyframes tl{
-	0%,96%,100%{transform:rotate(0deg)}
-	12%{transform:rotate(-45deg)}
-	24%{transform:rotate(-90deg)}
-	36%{transform:rotate(-135deg)}
-	48%{left:50px;transform:rotate(-180deg)}
-	60%{left:125px;opacity:1;transform:rotate(-135deg)}
-	61%,95%{opacity:0}
-	}
+@keyframes tl {
 
-@keyframes tr{
-	0%{transform:rotate(0deg)}
-	12%{transform:rotate(-45deg)}
-	24%{transform:rotate(-90deg)}
-	36%{transform:rotate(-135deg)}
-	48%{transform:rotate(-180deg)}
-	60%{transform:rotate(-225deg)}
-	72%{transform:rotate(-270deg)}
-	84%{transform:rotate(-315deg)}
-	96%,100%{transform:rotate(-360deg)}
-	}
+    0%,
+    96%,
+    100% {
+        transform: rotate(0deg)
+    }
 
-@keyframes bl{
-	0%,100%{transform:rotate(0deg)}
-	12%{transform:rotate(-45deg)}
-	24%{left:50px;transform:rotate(-90deg)}
-	36%{left:125px;opacity:1;transform:rotate(-45deg)}
-	37%,83%{opacity:0}
-	84%{left:-25px;opacity:1;transform:rotate(-45deg)}
-	96%{left:50px;transform:rotate(0deg)}
-	}
+    12% {
+        transform: rotate(-45deg)
+    }
 
-@keyframes br{
-	0%,96%,100%{transform:rotate(0deg)}
-	12%{left:125px;opacity:1;transform:rotate(45deg)}
-	13%,59%{opacity:0}
-	60%{left:-25px;opacity:1;transform:rotate(45deg)}
-	72%{left:50px;transform:rotate(90deg)}
-	84%{transform:rotate(45deg)}
-	}
+    24% {
+        transform: rotate(-90deg)
+    }
+
+    36% {
+        transform: rotate(-135deg)
+    }
+
+    48% {
+        left: 50px;
+        transform: rotate(-180deg)
+    }
+
+    60% {
+        left: 125px;
+        opacity: 1;
+        transform: rotate(-135deg)
+    }
+
+    61%,
+    95% {
+        opacity: 0
+    }
+}
+
+@keyframes tr {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    12% {
+        transform: rotate(-45deg)
+    }
+
+    24% {
+        transform: rotate(-90deg)
+    }
+
+    36% {
+        transform: rotate(-135deg)
+    }
+
+    48% {
+        transform: rotate(-180deg)
+    }
+
+    60% {
+        transform: rotate(-225deg)
+    }
+
+    72% {
+        transform: rotate(-270deg)
+    }
+
+    84% {
+        transform: rotate(-315deg)
+    }
+
+    96%,
+    100% {
+        transform: rotate(-360deg)
+    }
+}
+
+@keyframes bl {
+
+    0%,
+    100% {
+        transform: rotate(0deg)
+    }
+
+    12% {
+        transform: rotate(-45deg)
+    }
+
+    24% {
+        left: 50px;
+        transform: rotate(-90deg)
+    }
+
+    36% {
+        left: 125px;
+        opacity: 1;
+        transform: rotate(-45deg)
+    }
+
+    37%,
+    83% {
+        opacity: 0
+    }
+
+    84% {
+        left: -25px;
+        opacity: 1;
+        transform: rotate(-45deg)
+    }
+
+    96% {
+        left: 50px;
+        transform: rotate(0deg)
+    }
+}
+
+@keyframes br {
+
+    0%,
+    96%,
+    100% {
+        transform: rotate(0deg)
+    }
+
+    12% {
+        left: 125px;
+        opacity: 1;
+        transform: rotate(45deg)
+    }
+
+    13%,
+    59% {
+        opacity: 0
+    }
+
+    60% {
+        left: -25px;
+        opacity: 1;
+        transform: rotate(45deg)
+    }
+
+    72% {
+        left: 50px;
+        transform: rotate(90deg)
+    }
+
+    84% {
+        transform: rotate(45deg)
+    }
+}
+
 /*                                           ! Google Loader Ended Here ...
 =======================================================================================================================*/
 
 /* This Is Not Part Of Google Loader */
-.me{
-	background:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1735448/profile/profile-80.jpg?1528976396")no-repeat center / contain;
-	width:40px;
-	height:40px;
-	bottom:16px;
-	right:16px;
-	display:block;
-	position:fixed;
-	border-radius:50%;
-	animation:me 2s linear infinite alternate
-	}
+.me {
+    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1735448/profile/profile-80.jpg?1528976396")no-repeat center / contain;
+    width: 40px;
+    height: 40px;
+    bottom: 16px;
+    right: 16px;
+    display: block;
+    position: fixed;
+    border-radius: 50%;
+    animation: me 2s linear infinite alternate
+}
 
-@keyframes me{
-	from{transform:translateY(-4px)}
-	to{transform:translateY(4px)}
-	}
+@keyframes me {
+    from {
+        transform: translateY(-4px)
+    }
 
-.me:hover span
-	{right:50px;opacity:1;visibility:visible}
+    to {
+        transform: translateY(4px)
+    }
+}
 
-.me span{
-	width:150px;
-	top:10px;
-	right:0;
-	display:block;
-	position:absolute;
-	color:#008080;
-	font-family:Tahoma,Geneva,sans-serif;
-	font-size:16px;
-	font-style:normal;
-	font-weight:400;
-	text-align:center;
-	z-index:-1;
-	opacity:0;
-	visibility:hidden;
-	transition:all .5s ease
-	}
+.me:hover span {
+    right: 50px;
+    opacity: 1;
+    visibility: visible
+}
+
+.me span {
+    width: 150px;
+    top: 10px;
+    right: 0;
+    display: block;
+    position: absolute;
+    color: #008080;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    z-index: -1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease
+}
