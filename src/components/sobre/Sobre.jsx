@@ -10,8 +10,8 @@ class Sobre extends Component {
                     <div className="banner-oque">
                         <img src="https://ativosaude.akamaized.net/wp-content/uploads/2018/08/22072731/pele-amarelada-min.jpg" />
                         <p>
-                        O que é icterícia?
-        De acordo com o gastroenterologista Rodrigo Toledo, formado pela Universidade Federal do Paraná (UFPR), o amarelão acontece pelo excesso do pigmento bilirrubina, que se fixa na pele gradativamente de modo a comprometer sua coloração natural. “O acometimento é inofensivo, mas visto como um sinal importante para outros diagnósticos”, ressalta.
+                            O que é icterícia?
+            De acordo com o gastroenterologista Rodrigo Toledo, formado pela Universidade Federal do Paraná (UFPR), o amarelão acontece pelo excesso do pigmento bilirrubina, que se fixa na pele gradativamente de modo a comprometer sua coloração natural. “O acometimento é inofensivo, mas visto como um sinal importante para outros diagnósticos”, ressalta.
                         </p>
                     </div>
                     <div className="banner-desc">
@@ -22,7 +22,7 @@ class Sobre extends Component {
                             Em seu estado normal, a substância amarelada vai até o fígado, onde se mistura com a bile, e é processada por meio das vias biliares, sendo utilizada posteriormente no processo da digestão e na urina.
                         </p>
                     </div>
-            </div>
+                </div>
                 <a href="https://www.ativosaude.com/saude/ictericia/" >
                     Link de consulta.
                 </a>
