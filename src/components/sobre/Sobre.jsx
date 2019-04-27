@@ -6,15 +6,6 @@ class Sobre extends Component {
         return (
             <div className="sobre">
                 <h1 className="sobre-title">Icterícia</h1>
-
-                <div className="banner">
-                    <img src="https://ativosaude.akamaized.net/wp-content/uploads/2018/08/22072731/pele-amarelada-min.jpg" />
-                </div>
-                <p>
-                    O que é icterícia?
-    De acordo com o gastroenterologista Rodrigo Toledo, formado pela Universidade Federal do Paraná (UFPR), o amarelão acontece pelo excesso do pigmento bilirrubina, que se fixa na pele gradativamente de modo a comprometer sua coloração natural. “O acometimento é inofensivo, mas visto como um sinal importante para outros diagnósticos”, ressalta.
-                    </p>
-
                 <div className="banner">
                     <div className="banner-oque">
                         <img src="https://ativosaude.akamaized.net/wp-content/uploads/2018/08/22072731/pele-amarelada-min.jpg" />
