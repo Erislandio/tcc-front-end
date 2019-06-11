@@ -16,23 +16,6 @@ class SpotContato extends Component {
                         {this.props.desc}
                     </p>
                 </div>
-                <ul className="profile-social-links">
-                    <li>
-                        <a target="_blank" href="https://www.facebook.com/creativedonut">
-                            <i className="fa fa-facebook"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://twitter.com/dropyourbass">
-                            <i className="fa fa-twitter"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a target="_blank" href="https://github.com/vipulsaxena">
-                            <i className="fa fa-github"></i>
-                        </a>
-                    </li>
-                </ul>
             </aside>
         );
     }

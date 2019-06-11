@@ -2,6 +2,9 @@ import React, { Component } from 'react';
 import SpotContato from './SpotContato';
 import './contatos.css'
 import wagner from '../../assets/img/wagner.jpeg'
+import eris from '../../assets/img/eris.jpg'
+import ronaldo from '../../assets/img/ronaldo.jpg'
+import tiago from '../../assets/img/tiago.jpg'
 
 
 class Contatos extends Component {
@@ -18,14 +21,14 @@ class Contatos extends Component {
                             email="erislandiosoares@gmail.com" 
                             name="Erislândio Soares" 
                             desc="Estudante de ensino superior FATEC" 
-                            imagem="https://media.licdn.com/dms/image/C4D03AQFFE9DcDcwiZQ/profile-displayphoto-shrink_200_200/0?e=1557964800&v=beta&t=lMG2gZdvBgms39nGIv01g2LnyLFKAK7UintBiCeoOR8" />
+                            imagem={eris} />
                             <SpotContato 
                             email="ronaldogodoi2@gmail.com" 
                             name="Ronaldo Caetano" 
                             desc="Estudante de ensino superior FATEC" 
-                            imagem="https://media.licdn.com/dms/image/C4D03AQF47TJR4qVGRw/profile-displayphoto-shrink_800_800/0?e=1557964800&v=beta&t=T9NUGCZ_8Fu6a3G__fR-zIY_ZMXSo_nYwYxA-CFtIho" />
+                            imagem={ronaldo} />
                              <SpotContato 
-                            imagem="https://media.licdn.com/dms/image/C4E03AQE0UYg5leADMw/profile-displayphoto-shrink_800_800/0?e=1557964800&v=beta&t=BfJS0We-A2_WRK24FrwZTMUJcMHmGIDEEhKnaUylLJ0" 
+                            imagem={tiago} 
                             email="tiagobucciarelli20@gmai.com" 
                             name="Tiago Bucciarelli 
                             " desc="Estudante de ensino superior FATEC" />
